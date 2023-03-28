@@ -33,6 +33,7 @@ function bubbleSort(arr) {
 console.log(bubbleSort([5, 2, 8, 6, 9, 10, 4, 6, 29, 1]));
 console.log(bubbleSort([23, 4, 6, 0, 41, 83, 5, 7, 11, 3]));
 
+
 /*
   The optimized version of bubble sort can be very useful in situations where the array is already 
   partially or fully sorted. By introducing the noSwaps boolean variable, the algorithm can 
