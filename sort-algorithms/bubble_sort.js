@@ -32,3 +32,32 @@ function bubbleSort(arr) {
 
 console.log(bubbleSort([5, 2, 8, 6, 9, 10, 4, 6, 29, 1]));
 console.log(bubbleSort([23, 4, 6, 0, 41, 83, 5, 7, 11, 3]));
+
+
+/*
+  The optimized version of bubble sort can be very useful in situations where the array is already 
+  partially or fully sorted. By introducing the noSwaps boolean variable, the algorithm can 
+  terminate early if no swaps were made during a particular iteration. 
+  This reduces the overall number of iterations and comparisons needed, making the sorting process 
+  faster than the standard version of bubble sort. 
+  This optimization can be particularly beneficial when dealing with larger arrays that are 
+  mostly sorted or nearly sorted.
+*/
+function bubbleSortOptimized(arr) {
+  const n = arr.length;
+  for (let i = 0; i < n; i++) {
+    let noSwaps = true;
+    for (let j = 0; j < n - i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        const swap = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = swap;
+        noSwaps = false;
+      }
+    }
+    if (noSwaps) break;
+  }
+
+  return arr;
+}
+console.log(bubbleSortOptimized([9, 1, 2, 3, 4, 5, 6, 7, 8]));
