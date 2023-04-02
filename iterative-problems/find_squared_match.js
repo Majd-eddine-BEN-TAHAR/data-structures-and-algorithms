@@ -1,3 +1,8 @@
+/*
+  -- check if there are matching pairs of numbers between two arrays, where each 
+  number in the second array is the square of a number in the first array.
+  -- use the Frequency Counter pattern
+*/
 function findSquaredMatch(arr1, arr2) {
   let existingValues = {};
   for (const number of arr2) {

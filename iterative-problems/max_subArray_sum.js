@@ -1,12 +1,17 @@
-function maxSubArraySum(arr, num) {
-  if (num > arr.length) return null;
+/*
+  -- find the maximum sum of a subarray in an array. A subarray is a contiguous block of elements from the array.
+  -- find the maximum sum of subarrayLength consecutive elements in arr
+  -- use the sliding window pattern
+*/
+function maxSubArraySum(arr, subarrayLength) {
+  if (subarrayLength > arr.length) return null;
 
   let maxSum = 0;
   let consecutivesFirstIndex = 0;
   let sumConsecutives = 0;
 
   for (let i = 0; i < arr.length; i++) {
-    if (i < num) {
+    if (i < subarrayLength) {
       maxSum = maxSum + arr[i];
       sumConsecutives = maxSum;
       continue;

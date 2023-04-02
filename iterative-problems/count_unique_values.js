@@ -1,3 +1,8 @@
+/*  
+  -- count the number of unique values in a sorted array of integers. 
+  -- use the Multiple Pointers pattern.
+*/
+
 function countUniqueValues(arr) {
   let left = 0;
   let right = arr.length - 1;
