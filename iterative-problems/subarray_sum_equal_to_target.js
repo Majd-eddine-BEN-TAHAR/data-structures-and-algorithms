@@ -1,3 +1,8 @@
+/*
+  -- find a subarray (contiguous block of elements) in an array of integers that sums up to a given target sum.
+  -- use the sliding window pattern,
+*/
+
 function subarraySumEqualToTarget(arr, targetSum) {
   let left = 0;
   let right = 0;

@@ -1,3 +1,10 @@
+/*
+  -- find the indices of the first pair of elements in an array that sum up to zero. 
+  suppose you have an array of integers, we need to find the first pair of elements 
+  whose sum is equal to zero, and return their indices in the array, if there is no such
+  pair, the function should return -1.
+  -- use the Two-Pointers Pattern and Binary Search Pattern. 
+*/
 function findPairWithZeroSumIndex(arr) {
   let left = 0;
   let right = arr.length - 1;

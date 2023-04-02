@@ -1,3 +1,7 @@
+/*
+  -- find a pair of integers in an array that sum to a given target integer.
+  -- use frequency counter pattern
+*/
 function findPairSummingToTarget(arr, target) {
   const freqCounter = {};
   for (let val of arr) {
