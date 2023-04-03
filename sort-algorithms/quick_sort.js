@@ -38,9 +38,10 @@ function quickSort(arr, start = 0, end = arr.length - 1) {
 }
 
 /**
-    * Sorts a partition of an array around a pivot element and returns the index of the pivot.
-    * This function will not sort the entire array correctly, but will only rearrange the
+    * 1. Sorts a partition of an array around a pivot element and returns the index of the pivot.
+    * 2. This function will not sort the entire array correctly, but will only rearrange the
     * elements by putting the smaller ones at the left and the bigger ones at the right of the pivot.
+    * 3. Position the pivot in its correct place in the array
     *
     @param {Array} arr - The array to find the pivot index for.
     @param {Number} startIndex - The starting index of the subarray to find the pivot index for.
@@ -76,6 +77,7 @@ function quickSort2(arr, start = 0, end = arr.length - 1) {
   }
   return arr;
 }
+
 
 function sortAndGetPivotIndex2(arr, start, end) {
   const pivot = arr[end]; // Choose the last element in the partition as the pivot element
