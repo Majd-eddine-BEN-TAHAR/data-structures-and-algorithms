@@ -68,25 +68,18 @@ class Queue {
 
 const myQueue = new Queue();
 
-// Add some items to the queue
 myQueue.enqueue("apple");
 myQueue.enqueue("banana");
 myQueue.enqueue("cherry");
 
-// Get the size of the queue
 console.log("Size of queue:", myQueue.getSize());
 
-// Check if the queue is empty
 console.log("Is queue empty?", myQueue.isEmpty());
 
-// Remove the first item from the queue
 console.log("Removed item:", myQueue.dequeue());
 
-// Get the first item in the queue without removing it
 console.log("First item in queue:", myQueue.peek());
 
-// Add another item to the queue
 myQueue.enqueue("date");
 
-// Print out all the items in the queue
 console.log("All items in queue:", myQueue.toString());
